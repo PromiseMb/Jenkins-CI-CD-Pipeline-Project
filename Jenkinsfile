@@ -106,7 +106,7 @@ pipeline {
         HOSTS = "dev"
       }
       steps {
-        sh "ansible-playbook ${WORKSPACE}/deploy.yaml --extra-vars \"hosts=$HOSTS workspace_path=$WORKSPACE\""
+        sh "sudo ansible-playbook ${WORKSPACE}/deploy.yaml --extra-vars \"hosts=$HOSTS workspace_path=$WORKSPACE\""
       }
      }
      
